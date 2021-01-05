@@ -9,7 +9,7 @@ from tensorflow.keras import  layers, models
 
 #image
    
-#Read all the imgs in 3D umpy array 
+#Read all the imgs in 3D numpy array 
 #1.Buildings
 a=[cv2.resize(cv2.imread(img),(150,150)) for img in glob.glob("C:/Users/kunjeshparekh/Desktop/KP/IMS/py/project/Intel_Image_Classification_Kaggle/seg_train/seg_train/buildings/*.jpg")]
 b=[str(img) for img in glob.glob("C:/Users/kunjeshparekh/Desktop/KP/IMS/py/project/Intel_Image_Classification_Kaggle/seg_train/seg_train/buildings/*.jpg")] #b has all the names of the imgs with path
