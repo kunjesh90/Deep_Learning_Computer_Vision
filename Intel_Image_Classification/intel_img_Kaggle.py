@@ -250,31 +250,3 @@ ans_final=(np.argmax(pred,axis=1))
 final_pred=pd.concat([pd.DataFrame(b),pd.DataFrame(ans_final)],axis=1)
 final_pred.head()
 final_pred.to_csv("C:/Users/kunjeshparekh/Desktop/KP/IMS/py/project/Intel_Image_Classification_Kaggle/final_ans_pred.csv",index=False)
-
-'''
-with zipfile.ZipFile('C:\\Users\\kunjeshparekh\\Desktop\\KP\\IMS\\py\\project\\Intel_Image_Classification_Kaggle\\archive.zip', 'r') as zfile:
-    data = zfile.read('seg_train/seg_train/buildings/1058.jpg')
-    img = cv2.imdecode(np.frombuffer(data, np.uint8), 1)
-
-cv2.imshow("image",img)
-cv2.waitKey(0) #0 is infinite delay , rest
-
-cnt=0
-directory=np.zeros((150,150,3))
-directory=np.reshape(directory,(1,150,150,3))
-for img in glob.glob("C:/Users/kunjeshparekh/Desktop/KP/IMS/py/project/Intel_Image_Classification_Kaggle/seg_train/seg_train/buildings/*.jpg"):
-    cv_img = cv2.imread(img)
-    new_img=np.reshape(cv_img,(1,150,150,3))
-    directory = np.append(new_img , directory , axis = 0)
-    print(cnt)
-    cnt+=1
-    #df[cnt]=cv_img
-    #cnt+=1
-    cv_img1=np.stack(cv_img,axis=0)
-    #pd.concat([df,pd.DataFrame(cv_img)],axis=0)
- #   df=np.stack((df,cv_img),axis=0)
-#    np.vstack()
-    cnt+=1
-
-directory.shape
-'''
