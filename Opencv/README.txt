@@ -1,5 +1,6 @@
 This has the entire OPENCV tutorial alongwith a project
-Tutorial
+
+Tutorials
 
 1)Import_img_video_webcam (how to import image,video,webcam)
 2)imgscale2 
