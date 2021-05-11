@@ -1,6 +1,6 @@
 
 Secured Place in top 10 % Ranked 367 from 3937 Sucessful Teams Submissions
-
+Competition link: https://www.drivendata.org/competitions/64/hateful-memes/
 The goal is to predict whether a meme is hateful or non-hateful. 
 This is a binary classification problem with multimodal input data consisting of 
 the the meme image itself (the image mode) and a string representing the text in the meme image (the text mode).
